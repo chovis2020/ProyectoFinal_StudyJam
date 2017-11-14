@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoo"
+    android:orientation="vertical"
+    tools:context="com.gdgandroidbolivia.tourslapazmaravillosa.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondooooooo"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/la_paz"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/iconoooo"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/fondoo"/>
+        <Button
+            android:id="@+id/btn_empezar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_gravity="center"
+            android:text="EMPEZAR"
+            android:onClick="onClick"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:background="@drawable/boton1"
+            android:layout_marginTop="85dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gdgandroidbolivia.tourslapazmaravillosa.Iniciar_Sesion">
+    <Button
+        android:id="@+id/acercaApp"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:text="Acerca de la App"
+        android:textColor="@color/text_color"
+        android:background="@drawable/boton1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/img_intro"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="48dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/img_intro"
+        android:layout_marginLeft="48dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2463b4"
+            android:hint="Usuario"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="48dp"
+        android:layout_below="@id/til_usuario"
+        android:layout_marginLeft="48dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2463b4"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/boton_intro"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="16dp"
+        android:onClick="ingresar"
+        android:textColor="@color/text_color"
+        android:layout_below="@id/til_password"
+        android:background="@drawable/boton1"
+        android:text="ingresar"/>
+
+    <Button
+        android:id="@+id/boton_registro"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="16dp"
+        android:onClick="registro"
+        android:textColor="@color/text_color"
+        android:layout_below="@id/til_password"
+        android:background="@drawable/boton1"
+        android:text="registrarse"/>
+
+    <View
+        android:id="@+id/reveal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
